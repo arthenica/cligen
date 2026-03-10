@@ -205,7 +205,7 @@ process_options (int argc, char **argv)
         {
           const char str[] =
             "systemkey-tool 3.7.4\n"
-            "Copyright (C) 2024 Daiki Ueno\n"
+            "Copyright (C) 2026 \n"
             "This is free software. It is licensed for use, modification and\n"
             "redistribution under the terms of the GNU General Public License,\n"
             "version 3 or later <http://gnu.org/licenses/gpl.html>\n"
@@ -224,7 +224,7 @@ process_options (int argc, char **argv)
         {
           const char str[] =
             "systemkey-tool 3.7.4\n"
-            "Copyright (C) 2024 Daiki Ueno\n"
+            "Copyright (C) 2026 \n"
             "This is free software. It is licensed for use, modification and\n"
             "redistribution under the terms of the GNU General Public License,\n"
             "version 3 or later <http://gnu.org/licenses/gpl.html>\n"
