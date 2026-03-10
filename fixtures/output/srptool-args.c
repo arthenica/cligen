@@ -48,18 +48,18 @@ parse_number (const char *arg)
 /* Long options.  */
 static const struct option long_options[] =
 {
-  { "debug", required_argument, 0, 'd' },
-  { "index", required_argument, 0, 'i' },
-  { "username", required_argument, 0, 'u' },
-  { "passwd", required_argument, 0, 'p' },
-  { "salt", required_argument, 0, 's' },
-  { "verify", no_argument, 0, CHAR_MAX + 1 },
-  { "passwd-conf", required_argument, 0, 'v' },
-  { "create-conf", required_argument, 0, CHAR_MAX + 2 },
-  { "version", optional_argument, 0, CHAR_MAX + 3 },
-  { "help", no_argument, 0, 'h' },
-  { "more-help", no_argument, 0, '!' },
-  { 0, 0, 0, 0 }
+  { "debug", required_argument, NULL, 'd' },
+  { "index", required_argument, NULL, 'i' },
+  { "username", required_argument, NULL, 'u' },
+  { "passwd", required_argument, NULL, 'p' },
+  { "salt", required_argument, NULL, 's' },
+  { "verify", no_argument, NULL, CHAR_MAX + 1 },
+  { "passwd-conf", required_argument, NULL, 'v' },
+  { "create-conf", required_argument, NULL, CHAR_MAX + 2 },
+  { "version", optional_argument, NULL, CHAR_MAX + 3 },
+  { "help", no_argument, NULL, 'h' },
+  { "more-help", no_argument, NULL, '!' },
+  { NULL, 0, NULL, 0 }
 
 };
 

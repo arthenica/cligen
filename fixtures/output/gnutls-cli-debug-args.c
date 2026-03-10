@@ -48,15 +48,15 @@ parse_number (const char *arg)
 /* Long options.  */
 static const struct option long_options[] =
 {
-  { "debug", required_argument, 0, 'd' },
-  { "verbose", no_argument, 0, 'V' },
-  { "port", required_argument, 0, 'p' },
-  { "starttls-proto", required_argument, 0, CHAR_MAX + 2 },
-  { "app-proto", required_argument, 0, CHAR_MAX + 1 },
-  { "version", optional_argument, 0, 'v' },
-  { "help", no_argument, 0, 'h' },
-  { "more-help", no_argument, 0, '!' },
-  { 0, 0, 0, 0 }
+  { "debug", required_argument, NULL, 'd' },
+  { "verbose", no_argument, NULL, 'V' },
+  { "port", required_argument, NULL, 'p' },
+  { "starttls-proto", required_argument, NULL, CHAR_MAX + 2 },
+  { "app-proto", required_argument, NULL, CHAR_MAX + 1 },
+  { "version", optional_argument, NULL, 'v' },
+  { "help", no_argument, NULL, 'h' },
+  { "more-help", no_argument, NULL, '!' },
+  { NULL, 0, NULL, 0 }
 
 };
 

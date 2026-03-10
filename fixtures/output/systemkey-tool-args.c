@@ -48,16 +48,16 @@ parse_number (const char *arg)
 /* Long options.  */
 static const struct option long_options[] =
 {
-  { "debug", required_argument, 0, 'd' },
-  { "outfile", required_argument, 0, CHAR_MAX + 1 },
-  { "list", no_argument, 0, CHAR_MAX + 2 },
-  { "delete", required_argument, 0, CHAR_MAX + 3 },
-  { "outder", no_argument, 0, CHAR_MAX + 4 },
-  { "no-outder", no_argument, 0, CHAR_MAX + 5 },
-  { "version", optional_argument, 0, 'v' },
-  { "help", no_argument, 0, 'h' },
-  { "more-help", no_argument, 0, '!' },
-  { 0, 0, 0, 0 }
+  { "debug", required_argument, NULL, 'd' },
+  { "outfile", required_argument, NULL, CHAR_MAX + 1 },
+  { "list", no_argument, NULL, CHAR_MAX + 2 },
+  { "delete", required_argument, NULL, CHAR_MAX + 3 },
+  { "outder", no_argument, NULL, CHAR_MAX + 4 },
+  { "no-outder", no_argument, NULL, CHAR_MAX + 5 },
+  { "version", optional_argument, NULL, 'v' },
+  { "help", no_argument, NULL, 'h' },
+  { "more-help", no_argument, NULL, '!' },
+  { NULL, 0, NULL, 0 }
 
 };
 

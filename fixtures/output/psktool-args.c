@@ -48,15 +48,15 @@ parse_number (const char *arg)
 /* Long options.  */
 static const struct option long_options[] =
 {
-  { "debug", required_argument, 0, 'd' },
-  { "keysize", required_argument, 0, 's' },
-  { "username", required_argument, 0, 'u' },
-  { "pskfile", required_argument, 0, 'p' },
-  { "passwd", required_argument, 0, CHAR_MAX + 1 },
-  { "version", optional_argument, 0, 'v' },
-  { "help", no_argument, 0, 'h' },
-  { "more-help", no_argument, 0, '!' },
-  { 0, 0, 0, 0 }
+  { "debug", required_argument, NULL, 'd' },
+  { "keysize", required_argument, NULL, 's' },
+  { "username", required_argument, NULL, 'u' },
+  { "pskfile", required_argument, NULL, 'p' },
+  { "passwd", required_argument, NULL, CHAR_MAX + 1 },
+  { "version", optional_argument, NULL, 'v' },
+  { "help", no_argument, NULL, 'h' },
+  { "more-help", no_argument, NULL, '!' },
+  { NULL, 0, NULL, 0 }
 
 };
 
