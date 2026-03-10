@@ -71,10 +71,8 @@ def mangle(name: str) -> str:
 
 
 def format_long_opt(c: Union[str, int], long_opt: str, has_arg: str) -> str:
-    if isinstance(c, str):
-        return f"{INDENT}{{ \"{long_opt}\", {has_arg}, 0, '{c}' }},\n"
-    else:
-        return f'{INDENT}{{ "{long_opt}", {has_arg}, 0, CHAR_MAX + {c} }},\n'
+    char: str = f"'{c}'" if isinstance(c, str) else f'CHAR_MAX + {c}'
+    return f'{INDENT}{{ "{long_opt}", {has_arg}, 0, {char} }},\n'
 
 
 def format_switch_case(c: Union[str, int], long_opt: str) -> str:
