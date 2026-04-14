@@ -48,34 +48,34 @@ parse_number (const char *arg)
 /* Long options.  */
 static const struct option long_options[] =
 {
-  { "debug", required_argument, 0, 'd' },
-  { "verbose", no_argument, 0, 'V' },
-  { "infile", required_argument, 0, CHAR_MAX + 1 },
-  { "outfile", required_argument, 0, CHAR_MAX + 2 },
-  { "ask", optional_argument, 0, CHAR_MAX + 3 },
-  { "verify-response", no_argument, 0, 'e' },
-  { "request-info", no_argument, 0, 'i' },
-  { "response-info", no_argument, 0, 'j' },
-  { "generate-request", no_argument, 0, 'q' },
-  { "nonce", no_argument, 0, CHAR_MAX + 4 },
-  { "no-nonce", no_argument, 0, CHAR_MAX + 5 },
-  { "load-chain", required_argument, 0, CHAR_MAX + 6 },
-  { "load-issuer", required_argument, 0, CHAR_MAX + 7 },
-  { "load-cert", required_argument, 0, CHAR_MAX + 8 },
-  { "load-trust", required_argument, 0, CHAR_MAX + 9 },
-  { "load-signer", required_argument, 0, CHAR_MAX + 10 },
-  { "inder", no_argument, 0, CHAR_MAX + 11 },
-  { "no-inder", no_argument, 0, CHAR_MAX + 12 },
-  { "outder", no_argument, 0, CHAR_MAX + 13 },
-  { "outpem", no_argument, 0, CHAR_MAX + 14 },
-  { "load-request", required_argument, 0, 'Q' },
-  { "load-response", required_argument, 0, 'S' },
-  { "ignore-errors", no_argument, 0, CHAR_MAX + 15 },
-  { "verify-allow-broken", no_argument, 0, CHAR_MAX + 16 },
-  { "version", optional_argument, 0, 'v' },
-  { "help", no_argument, 0, 'h' },
-  { "more-help", no_argument, 0, '!' },
-  { 0, 0, 0, 0 }
+  { "debug", required_argument, NULL, 'd' },
+  { "verbose", no_argument, NULL, 'V' },
+  { "infile", required_argument, NULL, CHAR_MAX + 1 },
+  { "outfile", required_argument, NULL, CHAR_MAX + 2 },
+  { "ask", optional_argument, NULL, CHAR_MAX + 3 },
+  { "verify-response", no_argument, NULL, 'e' },
+  { "request-info", no_argument, NULL, 'i' },
+  { "response-info", no_argument, NULL, 'j' },
+  { "generate-request", no_argument, NULL, 'q' },
+  { "nonce", no_argument, NULL, CHAR_MAX + 4 },
+  { "no-nonce", no_argument, NULL, CHAR_MAX + 5 },
+  { "load-chain", required_argument, NULL, CHAR_MAX + 6 },
+  { "load-issuer", required_argument, NULL, CHAR_MAX + 7 },
+  { "load-cert", required_argument, NULL, CHAR_MAX + 8 },
+  { "load-trust", required_argument, NULL, CHAR_MAX + 9 },
+  { "load-signer", required_argument, NULL, CHAR_MAX + 10 },
+  { "inder", no_argument, NULL, CHAR_MAX + 11 },
+  { "no-inder", no_argument, NULL, CHAR_MAX + 12 },
+  { "outder", no_argument, NULL, CHAR_MAX + 13 },
+  { "outpem", no_argument, NULL, CHAR_MAX + 14 },
+  { "load-request", required_argument, NULL, 'Q' },
+  { "load-response", required_argument, NULL, 'S' },
+  { "ignore-errors", no_argument, NULL, CHAR_MAX + 15 },
+  { "verify-allow-broken", no_argument, NULL, CHAR_MAX + 16 },
+  { "version", optional_argument, NULL, 'v' },
+  { "help", no_argument, NULL, 'h' },
+  { "more-help", no_argument, NULL, '!' },
+  { NULL, 0, NULL, 0 }
 
 };
 
@@ -315,7 +315,7 @@ process_options (int argc, char **argv)
         {
           const char str[] =
             "ocsptool 3.7.4\n"
-            "Copyright (C) 2024 Daiki Ueno\n"
+            "Copyright (C) 2026 \n"
             "This is free software. It is licensed for use, modification and\n"
             "redistribution under the terms of the GNU General Public License,\n"
             "version 3 or later <http://gnu.org/licenses/gpl.html>\n"
@@ -334,7 +334,7 @@ process_options (int argc, char **argv)
         {
           const char str[] =
             "ocsptool 3.7.4\n"
-            "Copyright (C) 2024 Daiki Ueno\n"
+            "Copyright (C) 2026 \n"
             "This is free software. It is licensed for use, modification and\n"
             "redistribution under the terms of the GNU General Public License,\n"
             "version 3 or later <http://gnu.org/licenses/gpl.html>\n"

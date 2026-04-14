@@ -48,15 +48,15 @@ parse_number (const char *arg)
 /* Long options.  */
 static const struct option long_options[] =
 {
-  { "debug", required_argument, 0, 'd' },
-  { "verbose", no_argument, 0, 'V' },
-  { "port", required_argument, 0, 'p' },
-  { "starttls-proto", required_argument, 0, CHAR_MAX + 2 },
-  { "app-proto", required_argument, 0, CHAR_MAX + 1 },
-  { "version", optional_argument, 0, 'v' },
-  { "help", no_argument, 0, 'h' },
-  { "more-help", no_argument, 0, '!' },
-  { 0, 0, 0, 0 }
+  { "debug", required_argument, NULL, 'd' },
+  { "verbose", no_argument, NULL, 'V' },
+  { "port", required_argument, NULL, 'p' },
+  { "starttls-proto", required_argument, NULL, CHAR_MAX + 2 },
+  { "app-proto", required_argument, NULL, CHAR_MAX + 1 },
+  { "version", optional_argument, NULL, 'v' },
+  { "help", no_argument, NULL, 'h' },
+  { "more-help", no_argument, NULL, '!' },
+  { NULL, 0, NULL, 0 }
 
 };
 
@@ -205,7 +205,7 @@ process_options (int argc, char **argv)
         {
           const char str[] =
             "gnutls-cli-debug 3.7.4\n"
-            "Copyright (C) 2024 Daiki Ueno\n"
+            "Copyright (C) 2026 \n"
             "This is free software. It is licensed for use, modification and\n"
             "redistribution under the terms of the GNU General Public License,\n"
             "version 3 or later <http://gnu.org/licenses/gpl.html>\n"
@@ -224,7 +224,7 @@ process_options (int argc, char **argv)
         {
           const char str[] =
             "gnutls-cli-debug 3.7.4\n"
-            "Copyright (C) 2024 Daiki Ueno\n"
+            "Copyright (C) 2026 \n"
             "This is free software. It is licensed for use, modification and\n"
             "redistribution under the terms of the GNU General Public License,\n"
             "version 3 or later <http://gnu.org/licenses/gpl.html>\n"

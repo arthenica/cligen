@@ -48,16 +48,16 @@ parse_number (const char *arg)
 /* Long options.  */
 static const struct option long_options[] =
 {
-  { "debug", required_argument, 0, 'd' },
-  { "outfile", required_argument, 0, CHAR_MAX + 1 },
-  { "list", no_argument, 0, CHAR_MAX + 2 },
-  { "delete", required_argument, 0, CHAR_MAX + 3 },
-  { "outder", no_argument, 0, CHAR_MAX + 4 },
-  { "no-outder", no_argument, 0, CHAR_MAX + 5 },
-  { "version", optional_argument, 0, 'v' },
-  { "help", no_argument, 0, 'h' },
-  { "more-help", no_argument, 0, '!' },
-  { 0, 0, 0, 0 }
+  { "debug", required_argument, NULL, 'd' },
+  { "outfile", required_argument, NULL, CHAR_MAX + 1 },
+  { "list", no_argument, NULL, CHAR_MAX + 2 },
+  { "delete", required_argument, NULL, CHAR_MAX + 3 },
+  { "outder", no_argument, NULL, CHAR_MAX + 4 },
+  { "no-outder", no_argument, NULL, CHAR_MAX + 5 },
+  { "version", optional_argument, NULL, 'v' },
+  { "help", no_argument, NULL, 'h' },
+  { "more-help", no_argument, NULL, '!' },
+  { NULL, 0, NULL, 0 }
 
 };
 
@@ -205,7 +205,7 @@ process_options (int argc, char **argv)
         {
           const char str[] =
             "systemkey-tool 3.7.4\n"
-            "Copyright (C) 2024 Daiki Ueno\n"
+            "Copyright (C) 2026 \n"
             "This is free software. It is licensed for use, modification and\n"
             "redistribution under the terms of the GNU General Public License,\n"
             "version 3 or later <http://gnu.org/licenses/gpl.html>\n"
@@ -224,7 +224,7 @@ process_options (int argc, char **argv)
         {
           const char str[] =
             "systemkey-tool 3.7.4\n"
-            "Copyright (C) 2024 Daiki Ueno\n"
+            "Copyright (C) 2026 \n"
             "This is free software. It is licensed for use, modification and\n"
             "redistribution under the terms of the GNU General Public License,\n"
             "version 3 or later <http://gnu.org/licenses/gpl.html>\n"

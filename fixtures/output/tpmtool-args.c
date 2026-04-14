@@ -48,30 +48,30 @@ parse_number (const char *arg)
 /* Long options.  */
 static const struct option long_options[] =
 {
-  { "debug", required_argument, 0, 'd' },
-  { "infile", required_argument, 0, CHAR_MAX + 1 },
-  { "outfile", required_argument, 0, CHAR_MAX + 2 },
-  { "generate-rsa", no_argument, 0, CHAR_MAX + 3 },
-  { "register", no_argument, 0, CHAR_MAX + 4 },
-  { "signing", no_argument, 0, CHAR_MAX + 5 },
-  { "legacy", no_argument, 0, CHAR_MAX + 6 },
-  { "user", no_argument, 0, CHAR_MAX + 7 },
-  { "system", no_argument, 0, CHAR_MAX + 8 },
-  { "pubkey", required_argument, 0, CHAR_MAX + 9 },
-  { "list", no_argument, 0, CHAR_MAX + 10 },
-  { "delete", required_argument, 0, CHAR_MAX + 11 },
-  { "test-sign", required_argument, 0, CHAR_MAX + 12 },
-  { "sec-param", required_argument, 0, CHAR_MAX + 13 },
-  { "bits", required_argument, 0, CHAR_MAX + 14 },
-  { "inder", no_argument, 0, CHAR_MAX + 15 },
-  { "no-inder", no_argument, 0, CHAR_MAX + 16 },
-  { "outder", no_argument, 0, CHAR_MAX + 17 },
-  { "no-outder", no_argument, 0, CHAR_MAX + 18 },
-  { "srk-well-known", no_argument, 0, CHAR_MAX + 19 },
-  { "version", optional_argument, 0, 'v' },
-  { "help", no_argument, 0, 'h' },
-  { "more-help", no_argument, 0, '!' },
-  { 0, 0, 0, 0 }
+  { "debug", required_argument, NULL, 'd' },
+  { "infile", required_argument, NULL, CHAR_MAX + 1 },
+  { "outfile", required_argument, NULL, CHAR_MAX + 2 },
+  { "generate-rsa", no_argument, NULL, CHAR_MAX + 3 },
+  { "register", no_argument, NULL, CHAR_MAX + 4 },
+  { "signing", no_argument, NULL, CHAR_MAX + 5 },
+  { "legacy", no_argument, NULL, CHAR_MAX + 6 },
+  { "user", no_argument, NULL, CHAR_MAX + 7 },
+  { "system", no_argument, NULL, CHAR_MAX + 8 },
+  { "pubkey", required_argument, NULL, CHAR_MAX + 9 },
+  { "list", no_argument, NULL, CHAR_MAX + 10 },
+  { "delete", required_argument, NULL, CHAR_MAX + 11 },
+  { "test-sign", required_argument, NULL, CHAR_MAX + 12 },
+  { "sec-param", required_argument, NULL, CHAR_MAX + 13 },
+  { "bits", required_argument, NULL, CHAR_MAX + 14 },
+  { "inder", no_argument, NULL, CHAR_MAX + 15 },
+  { "no-inder", no_argument, NULL, CHAR_MAX + 16 },
+  { "outder", no_argument, NULL, CHAR_MAX + 17 },
+  { "no-outder", no_argument, NULL, CHAR_MAX + 18 },
+  { "srk-well-known", no_argument, NULL, CHAR_MAX + 19 },
+  { "version", optional_argument, NULL, 'v' },
+  { "help", no_argument, NULL, 'h' },
+  { "more-help", no_argument, NULL, '!' },
+  { NULL, 0, NULL, 0 }
 
 };
 
@@ -335,7 +335,7 @@ process_options (int argc, char **argv)
         {
           const char str[] =
             "tpmtool 3.7.4\n"
-            "Copyright (C) 2024 Daiki Ueno\n"
+            "Copyright (C) 2026 \n"
             "This is free software. It is licensed for use, modification and\n"
             "redistribution under the terms of the GNU General Public License,\n"
             "version 3 or later <http://gnu.org/licenses/gpl.html>\n"
@@ -354,7 +354,7 @@ process_options (int argc, char **argv)
         {
           const char str[] =
             "tpmtool 3.7.4\n"
-            "Copyright (C) 2024 Daiki Ueno\n"
+            "Copyright (C) 2026 \n"
             "This is free software. It is licensed for use, modification and\n"
             "redistribution under the terms of the GNU General Public License,\n"
             "version 3 or later <http://gnu.org/licenses/gpl.html>\n"

@@ -88,60 +88,60 @@ parse_number (const char *arg)
 /* Long options.  */
 static const struct option long_options[] =
 {
-  { "debug", required_argument, 0, 'd' },
-  { "sni-hostname", required_argument, 0, CHAR_MAX + 1 },
-  { "sni-hostname-fatal", no_argument, 0, CHAR_MAX + 2 },
-  { "alpn", required_argument, 0, CHAR_MAX + 3 },
-  { "alpn-fatal", no_argument, 0, CHAR_MAX + 4 },
-  { "noticket", no_argument, 0, CHAR_MAX + 5 },
-  { "earlydata", no_argument, 0, CHAR_MAX + 6 },
-  { "maxearlydata", required_argument, 0, CHAR_MAX + 7 },
-  { "nocookie", no_argument, 0, CHAR_MAX + 8 },
-  { "generate", no_argument, 0, 'g' },
-  { "quiet", no_argument, 0, 'q' },
-  { "nodb", no_argument, 0, CHAR_MAX + 9 },
-  { "http", no_argument, 0, CHAR_MAX + 10 },
-  { "echo", no_argument, 0, CHAR_MAX + 11 },
-  { "crlf", no_argument, 0, CHAR_MAX + 12 },
-  { "udp", no_argument, 0, 'u' },
-  { "mtu", required_argument, 0, CHAR_MAX + 13 },
-  { "srtp-profiles", required_argument, 0, CHAR_MAX + 14 },
-  { "disable-client-cert", no_argument, 0, 'a' },
-  { "require-client-cert", no_argument, 0, 'r' },
-  { "verify-client-cert", no_argument, 0, CHAR_MAX + 15 },
-  { "compress-cert", required_argument, 0, CHAR_MAX + 16 },
-  { "heartbeat", no_argument, 0, 'b' },
-  { "x509fmtder", no_argument, 0, CHAR_MAX + 17 },
-  { "priority", required_argument, 0, CHAR_MAX + 18 },
-  { "dhparams", required_argument, 0, CHAR_MAX + 19 },
-  { "x509cafile", required_argument, 0, CHAR_MAX + 20 },
-  { "x509crlfile", required_argument, 0, CHAR_MAX + 21 },
-  { "pgpkeyfile", required_argument, 0, CHAR_MAX + 22 },
-  { "x509keyfile", required_argument, 0, CHAR_MAX + 23 },
-  { "x509dsakeyfile", required_argument, 0, CHAR_MAX + 25 },
-  { "x509ecckeyfile", required_argument, 0, CHAR_MAX + 27 },
-  { "x509certfile", required_argument, 0, CHAR_MAX + 24 },
-  { "x509dsacertfile", required_argument, 0, CHAR_MAX + 26 },
-  { "x509ecccertfile", required_argument, 0, CHAR_MAX + 28 },
-  { "rawpkkeyfile", required_argument, 0, CHAR_MAX + 29 },
-  { "rawpkfile", required_argument, 0, CHAR_MAX + 30 },
-  { "srppasswd", required_argument, 0, CHAR_MAX + 31 },
-  { "srppasswdconf", required_argument, 0, CHAR_MAX + 32 },
-  { "pskpasswd", required_argument, 0, CHAR_MAX + 33 },
-  { "pskhint", required_argument, 0, CHAR_MAX + 34 },
-  { "ocsp-response", required_argument, 0, CHAR_MAX + 35 },
-  { "ignore-ocsp-response-errors", no_argument, 0, CHAR_MAX + 36 },
-  { "port", required_argument, 0, 'p' },
-  { "list", no_argument, 0, 'l' },
-  { "provider", required_argument, 0, CHAR_MAX + 37 },
-  { "keymatexport", required_argument, 0, CHAR_MAX + 38 },
-  { "keymatexportsize", required_argument, 0, CHAR_MAX + 39 },
-  { "recordsize", required_argument, 0, CHAR_MAX + 40 },
-  { "httpdata", required_argument, 0, CHAR_MAX + 41 },
-  { "version", optional_argument, 0, 'v' },
-  { "help", no_argument, 0, 'h' },
-  { "more-help", no_argument, 0, '!' },
-  { 0, 0, 0, 0 }
+  { "debug", required_argument, NULL, 'd' },
+  { "sni-hostname", required_argument, NULL, CHAR_MAX + 1 },
+  { "sni-hostname-fatal", no_argument, NULL, CHAR_MAX + 2 },
+  { "alpn", required_argument, NULL, CHAR_MAX + 3 },
+  { "alpn-fatal", no_argument, NULL, CHAR_MAX + 4 },
+  { "noticket", no_argument, NULL, CHAR_MAX + 5 },
+  { "earlydata", no_argument, NULL, CHAR_MAX + 6 },
+  { "maxearlydata", required_argument, NULL, CHAR_MAX + 7 },
+  { "nocookie", no_argument, NULL, CHAR_MAX + 8 },
+  { "generate", no_argument, NULL, 'g' },
+  { "quiet", no_argument, NULL, 'q' },
+  { "nodb", no_argument, NULL, CHAR_MAX + 9 },
+  { "http", no_argument, NULL, CHAR_MAX + 10 },
+  { "echo", no_argument, NULL, CHAR_MAX + 11 },
+  { "crlf", no_argument, NULL, CHAR_MAX + 12 },
+  { "udp", no_argument, NULL, 'u' },
+  { "mtu", required_argument, NULL, CHAR_MAX + 13 },
+  { "srtp-profiles", required_argument, NULL, CHAR_MAX + 14 },
+  { "disable-client-cert", no_argument, NULL, 'a' },
+  { "require-client-cert", no_argument, NULL, 'r' },
+  { "verify-client-cert", no_argument, NULL, CHAR_MAX + 15 },
+  { "compress-cert", required_argument, NULL, CHAR_MAX + 16 },
+  { "heartbeat", no_argument, NULL, 'b' },
+  { "x509fmtder", no_argument, NULL, CHAR_MAX + 17 },
+  { "priority", required_argument, NULL, CHAR_MAX + 18 },
+  { "dhparams", required_argument, NULL, CHAR_MAX + 19 },
+  { "x509cafile", required_argument, NULL, CHAR_MAX + 20 },
+  { "x509crlfile", required_argument, NULL, CHAR_MAX + 21 },
+  { "pgpkeyfile", required_argument, NULL, CHAR_MAX + 22 },
+  { "x509keyfile", required_argument, NULL, CHAR_MAX + 23 },
+  { "x509dsakeyfile", required_argument, NULL, CHAR_MAX + 25 },
+  { "x509ecckeyfile", required_argument, NULL, CHAR_MAX + 27 },
+  { "x509certfile", required_argument, NULL, CHAR_MAX + 24 },
+  { "x509dsacertfile", required_argument, NULL, CHAR_MAX + 26 },
+  { "x509ecccertfile", required_argument, NULL, CHAR_MAX + 28 },
+  { "rawpkkeyfile", required_argument, NULL, CHAR_MAX + 29 },
+  { "rawpkfile", required_argument, NULL, CHAR_MAX + 30 },
+  { "srppasswd", required_argument, NULL, CHAR_MAX + 31 },
+  { "srppasswdconf", required_argument, NULL, CHAR_MAX + 32 },
+  { "pskpasswd", required_argument, NULL, CHAR_MAX + 33 },
+  { "pskhint", required_argument, NULL, CHAR_MAX + 34 },
+  { "ocsp-response", required_argument, NULL, CHAR_MAX + 35 },
+  { "ignore-ocsp-response-errors", no_argument, NULL, CHAR_MAX + 36 },
+  { "port", required_argument, NULL, 'p' },
+  { "list", no_argument, NULL, 'l' },
+  { "provider", required_argument, NULL, CHAR_MAX + 37 },
+  { "keymatexport", required_argument, NULL, CHAR_MAX + 38 },
+  { "keymatexportsize", required_argument, NULL, CHAR_MAX + 39 },
+  { "recordsize", required_argument, NULL, CHAR_MAX + 40 },
+  { "httpdata", required_argument, NULL, CHAR_MAX + 41 },
+  { "version", optional_argument, NULL, 'v' },
+  { "help", no_argument, NULL, 'h' },
+  { "more-help", no_argument, NULL, '!' },
+  { NULL, 0, NULL, 0 }
 
 };
 
@@ -530,7 +530,7 @@ process_options (int argc, char **argv)
         {
           const char str[] =
             "gnutls-serv 3.7.4\n"
-            "Copyright (C) 2024 Daiki Ueno\n"
+            "Copyright (C) 2026 \n"
             "This is free software. It is licensed for use, modification and\n"
             "redistribution under the terms of the GNU General Public License,\n"
             "version 3 or later <http://gnu.org/licenses/gpl.html>\n"
@@ -549,7 +549,7 @@ process_options (int argc, char **argv)
         {
           const char str[] =
             "gnutls-serv 3.7.4\n"
-            "Copyright (C) 2024 Daiki Ueno\n"
+            "Copyright (C) 2026 \n"
             "This is free software. It is licensed for use, modification and\n"
             "redistribution under the terms of the GNU General Public License,\n"
             "version 3 or later <http://gnu.org/licenses/gpl.html>\n"
